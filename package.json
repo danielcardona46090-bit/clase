@@ -7,7 +7,9 @@
   },
   "scripts": {
     "build": "npx @tailwindcss/cli -i ./src/entrada.css -o ./css/tailwind.css",
-    "watch": "npx @tailwindcss/cli -i ./src/entrada.css -o ./css/tailwind.css --watch"
+    "watch": "npx @tailwindcss/cli -i ./src/entrada.css -o ./css/tailwind.css --watch",
+    "validar": "html-validate \"*.html\""
+  
   },
   "keywords": [],
   "author": "",
@@ -15,5 +17,8 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.3.3",
     "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "html-validate": "^11.17.0"
   }
 }
